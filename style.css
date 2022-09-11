@@ -52,14 +52,14 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cera Round Pro Bold', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
 body {
   color: #34495e;
   padding-bottom: 100px;
   font-family: 'Cera Round Pro Light', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-family: 'Cera Round Pro Bold', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 button {
@@ -121,7 +121,7 @@ p {
 
 .picture-item {
   height: 240px;
-  margin-top: 44px;
+  margin-top: 24px;
 }
 .picture-item img {
   display: block;
@@ -441,7 +441,6 @@ p {
 }
 
 /* Ensure images take up the same space when they load */
-/* https://vestride.github.io/Shuffle/images */
 .aspect {
   position: relative;
   width: 100%;

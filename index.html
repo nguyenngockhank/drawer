@@ -43,7 +43,7 @@
         <div class="filters-group">
           <p class="filter-label">Filter</p>
           <div class="btn-group filter-options">
-            <button class="btn btn--primary active" ><i class="bi bi-stack"></i> All</button>
+            <button class="btn btn--primary active" data-group="all"><i class="bi bi-stack"></i> All</button>
             <button class="btn btn--primary" data-group="digital"><i class="bi bi-magic"></i> Digital</button>
             <button class="btn btn--primary" data-group="tradi"><i class="bi bi-pencil"></i> Tradi</button>
             <button class="btn btn--primary" data-group="featured"><i class="bi bi-star-fill" ></i> Featured</button>
@@ -60,12 +60,11 @@
   <div class="container">
     <div id="grid" class="row my-shuffle-container">
       <figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--overlay" 
-        data-groups='["tradi"]'  data-title="Bull Demon King">
+        data-groups='["digital"]' data-title="Bull Demon King">
         <div class="picture-item__inner bg-s3">
           <div class="aspect">
             <div class="aspect__inner">
-              <img src="./images/sorry.png"
-                alt="Bull Demon King" />
+              <img src="./images/sorry.png"  alt="Bull Demon King" />
             </div>
           </div>
           <div class="picture-item__details backdrop-none">
@@ -109,7 +108,7 @@
             <figcaption class="picture-item__title"><a href="#" target="_blank" rel="noopener">SpiderMan</a></figcaption>
             <p class="picture-item__tags hidden@xs"><i class="bi bi-pencil "></i></p>
           </div>
-          <p class="picture-item__description">SpaceX launches a Falcon 9 rocket from Cape Canaveral Air Force Station</p>
+          <p class="picture-item__description">With great power comes great <strong>responsibility</strong></p>
         </div>
       </figure>
 
@@ -164,7 +163,7 @@
           <div class="picture-item__details">
             <figcaption class="picture-item__title">
               <a href="#" 
-                target="_blank" rel="noopener">Confused</a></figcaption>
+                target="_blank" rel="noopener">🧩️ Confused</a></figcaption>
             <p class="picture-item__tags hidden@xs"><i class="bi bi-star-fill"></i></p>
           </div>
           <p class="picture-item__description">I've got thoughts more tangled than my headphones.</p>

@@ -47,19 +47,11 @@ class Demo {
     const isActive = btn.classList.contains('active');
     const btnGroup = btn.getAttribute('data-group');
 
-    console.log(btnGroup)
     
     this._removeActiveClassFromChildren(btn.parentNode);
-    
-    let filterGroup;
-    if (isActive) {
-      btn.classList.remove('active');
-      filterGroup = Shuffle.ALL_ITEMS;
-    } else {
-      btn.classList.add('active');
-      filterGroup = btnGroup;
-    }
-    
+
+    let filterGroup = isActive ? Shuffle.ALL_ITEMS : btnGroup;
+    isActive ?  btn.classList.remove('active') : btn.classList.add('active')
     this.shuffle.filter(filterGroup);
   }
 
@@ -146,6 +138,8 @@ class Demo {
     });
   }
 }
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
   window.demo = new Demo(document.getElementById('grid'));
