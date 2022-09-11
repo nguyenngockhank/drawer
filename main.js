@@ -22,10 +22,10 @@ class Demo {
    */
   addShuffleEventListeners() {
     this.shuffle.on(Shuffle.EventType.LAYOUT, (data) => {
-      console.log('layout. data:', data);
+      // console.log('layout. data:', data);
     });
     this.shuffle.on(Shuffle.EventType.REMOVED, (data) => {
-      console.log('removed. data:', data);
+      // console.log('removed. data:', data);
     });
   }
 

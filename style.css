@@ -1,13 +1,69 @@
 /* Small reset */
+
+@font-face {
+  font-family: 'Cera Round Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cera Round Pro Regular'), url('./fonts/TypeMates  CeraRoundProRegular.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Cera Round Pro Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cera Round Pro Thin'), url('TypeMates  CeraRoundProThin.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Cera Round Pro Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cera Round Pro Light'), url('./fonts/TypeMates  CeraRoundProLight.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Cera Round Pro Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cera Round Pro Medium'), url('./fonts/TypeMates  CeraRoundProMedium.woff') format('woff');
+}
+  
+
+@font-face {
+  font-family: 'Cera Round Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cera Round Pro Bold'), url('./fonts/TypeMates  Cera Round Pro Bold.woff') format('woff');
+}
+  
+@font-face {
+  font-family: 'Cera Round Pro Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cera Round Pro Black'), url('./fonts/CeraRoundProBlack.woff') format('woff');
+}
+
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cera Round Pro Bold', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
 body {
   color: #34495e;
   padding-bottom: 100px;
+  font-family: 'Cera Round Pro Light', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+button {
+  font-family: 'Cera Round Pro Medium', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 figure {
@@ -64,8 +120,8 @@ p {
 }
 
 .picture-item {
-  height: 220px;
-  margin-top: 24px;
+  height: 240px;
+  margin-top: 44px;
 }
 .picture-item img {
   display: block;
@@ -626,4 +682,16 @@ p {
 
 .bg-rgb{
   background-image: radial-gradient(red, green, blue);
+}
+.bg-s1 {
+  background-image: linear-gradient(90deg, rgb(0, 219, 222) 0%, rgb(252, 0, 255) 100%);
+}
+.bg-s2 {
+  background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+}
+.bg-s3 {
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+}
+.backdrop-none {
+  backdrop-filter:none!important;
 }

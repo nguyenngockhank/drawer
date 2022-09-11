@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NhuTam's Portfolio</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="./shuffle.js"></script>
@@ -50,18 +59,18 @@
   
   <div class="container">
     <div id="grid" class="row my-shuffle-container">
-
-
-      <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["tradi"]' data-date-created="2016-08-12" data-title="Crocodile">
-        <div class="picture-item__inner ">
-          <div class="aspect aspect--16x9">
+      <figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--overlay" 
+        data-groups='["tradi"]'  data-title="Bull Demon King">
+        <div class="picture-item__inner bg-s3">
+          <div class="aspect">
             <div class="aspect__inner">
-              <img src="https://images.unsplash.com/photo-1471005197911-88e9d4a7834d?ixlib=rb-0.3.5&auto=format&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=284&h=160&fit=crop&s=bd8b952c4c983d4bde5e2018c90c9124" srcset="https://images.unsplash.com/photo-1471005197911-88e9d4a7834d?ixlib=rb-0.3.5&auto=format&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=284&h=160&fit=crop&s=bd8b952c4c983d4bde5e2018c90c9124 1x, https://images.unsplash.com/photo-1471005197911-88e9d4a7834d?ixlib=rb-0.3.5&auto=format&q=55&fm=jpg&dpr=2&crop=entropy&cs=tinysrgb&w=284&h=160&fit=crop&s=bd8b952c4c983d4bde5e2018c90c9124 2x"
-                alt="A close, profile view of a crocodile looking directly into the camera" />
+              <img src="./images/sorry.png"
+                alt="Bull Demon King" />
             </div>
           </div>
-          <div class="picture-item__details">
-            <figcaption class="picture-item__title"><a href="https://unsplash.com/photos/YOX8ZMTo7hk" target="_blank" rel="noopener">Crocodile</a></figcaption>
+          <div class="picture-item__details backdrop-none">
+            <figcaption class="picture-item__title"><a href="#" 
+              target="_blank" rel="noopener">👿 Bull Demon King</a></figcaption>
             <p class="picture-item__tags hidden@xs"><i class="bi bi-pencil"></i> </p>
           </div>
         </div>
@@ -69,7 +78,7 @@
   
       <figure class="col-6@xs col-8@sm col-6@md picture-item picture-item--overlay" 
           data-groups='["digital"]' data-date-created="2016-06-29" data-title="Milky Way">
-        <div class="picture-item__inner" style="background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);">
+        <div class="picture-item__inner bg-s2" >
           <img src="./images/imposter.png" />
           <div class="picture-item__details">
             <figcaption class="picture-item__title"><a href="#" target="_blank" rel="noopener">Imposters</a></figcaption>
@@ -89,8 +98,6 @@
         </div>
      </figure>
 
-
-
       <figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["tradi"]' data-date-created="2016-03-07" data-title="SpaceX">
         <div class="picture-item__inner">
           <div class="aspect aspect--9x80">
@@ -105,12 +112,13 @@
           <p class="picture-item__description">SpaceX launches a Falcon 9 rocket from Cape Canaveral Air Force Station</p>
         </div>
       </figure>
+
       <figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--overlay" 
             data-groups='["featured"]' data-date-created="2016-06-09" data-title="Crossroads">
-        <div class="picture-item__inner">
+        <div class="picture-item__inner bg-s1 ">
           <img src="./images/little-devil.gif" alt="A multi-level highway stack interchange in Puxi, Shanghai" />
-          <div class="picture-item__details" style="backdrop-filter:none">
-            <figcaption class="picture-item__title"><a href="#" target="_blank" rel="noopener">Litle Devil</a></figcaption>
+          <div class="picture-item__details backdrop-none">
+            <figcaption class="picture-item__title"><a href="#" target="_blank" rel="noopener">😋 Litle Devil</a></figcaption>
             <p class="picture-item__tags hidden@xs"><i class="bi bi-star-fill"></i></p>
           </div>
         </div>
@@ -129,21 +137,21 @@
         </div>
       </figure>
 
-      <figure class="col-6@xs col-8@sm col-6@md picture-item picture-item--h2" data-groups='["space"]' data-date-created="2015-11-06" data-title="Earth">
+      <figure class="col-6@xs col-8@sm col-6@md picture-item picture-item--h2 picture-item--overlay" data-groups='["digital"]' data-date-created="2015-11-06" data-title="Earth">
         <div class="picture-item__inner">
-          <div class="aspect aspect--16x9">
+          <div class="aspect">
             <div class="aspect__inner">
-              <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-0.3.5&auto=format&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=584&h=329&fit=crop&s=f4856588634def31d5885dc396fe9a2e" srcset="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-0.3.5&auto=format&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=584&h=329&fit=crop&s=f4856588634def31d5885dc396fe9a2e 1x, https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-0.3.5&auto=format&q=55&fm=jpg&dpr=2&crop=entropy&cs=tinysrgb&w=584&h=329&fit=crop&s=f4856588634def31d5885dc396fe9a2e 2x"
-                alt="NASA Satellite view of Earth" />
+              <img src="./images/couple.jpg" alt="Happy Moon Festival" />
             </div>
           </div>
           <div class="picture-item__details">
-            <figcaption class="picture-item__title"><a href="https://unsplash.com/photos/yZygONrUBe8" target="_blank" rel="noopener">Earth</a></figcaption>
-            <p class="picture-item__tags hidden@xs">space</p>
+            <figcaption class="picture-item__title"><a href="#" target="_blank" rel="noopener">🌙 Happy Moon Festival</a></figcaption>
+            <p class="picture-item__tags hidden@xs"><i class="bi bi-magic"></i></p>
           </div>
-          <p class="picture-item__description">NASA Satellite view of Earth</p>
+          <p class="picture-item__description">🌙 Happy Moon Festival</p>
         </div>
       </figure>
+
       <figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["digital"]' 
         data-date-created="2015-07-23" data-title="Turtle">
         <div class="picture-item__inner">
@@ -156,10 +164,10 @@
           <div class="picture-item__details">
             <figcaption class="picture-item__title">
               <a href="#" 
-                target="_blank" rel="noopener">confused</a></figcaption>
+                target="_blank" rel="noopener">Confused</a></figcaption>
             <p class="picture-item__tags hidden@xs"><i class="bi bi-star-fill"></i></p>
           </div>
-          <p class="picture-item__description">A close up of a turtle underwater</p>
+          <p class="picture-item__description">I've got thoughts more tangled than my headphones.</p>
         </div>
       </figure>
       <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["digital"]' data-date-created="2014-10-12" data-title="Stanley Park">
@@ -173,45 +181,6 @@
           <div class="picture-item__details">
             <figcaption class="picture-item__title"><a href="https://unsplash.com/photos/b-yEdfrvQ50" target="_blank" rel="noopener">Stanley Park</a></figcaption>
             <p class="picture-item__tags hidden@xs"><i class="bi bi-star-fill"></i></p>
-          </div>
-        </div>
-      </figure>
-      <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["tradi"]' data-date-created="2017-01-12" data-title="Astronaut Cat">
-        <div class="picture-item__inner">
-          <div class="aspect aspect--16x9">
-            <div class="aspect__inner">
-              <img src="https://images.unsplash.com/photo-1484244233201-29892afe6a2c?ixlib=rb-0.3.5&auto=format&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=284&h=160&fit=crop&s=98423596f72d9f0913a4d44f0580a34c" srcset="https://images.unsplash.com/photo-1484244233201-29892afe6a2c?ixlib=rb-0.3.5&auto=format&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=284&h=160&fit=crop&s=98423596f72d9f0913a4d44f0580a34c 1x, https://images.unsplash.com/photo-1484244233201-29892afe6a2c?ixlib=rb-0.3.5&auto=format&q=55&fm=jpg&dpr=2&crop=entropy&cs=tinysrgb&w=284&h=160&fit=crop&s=98423596f72d9f0913a4d44f0580a34c 2x"
-                alt="An intrigued cat sits in grass next to a flag planted in front of it with an astronaut space kitty sticker on beige fabric." />
-            </div>
-          </div>
-          <div class="picture-item__details">
-            <figcaption class="picture-item__title"><a href="https://unsplash.com/photos/FqkBXo2Nkq0" target="_blank" rel="noopener">Astronaut Cat</a></figcaption>
-            <p class="picture-item__tags hidden@xs"></p>
-          </div>
-        </div>
-      </figure>
-      <figure class="col-3@xs col-8@sm col-6@md picture-item picture-item--overlay" data-groups='["featured"]' data-date-created="2017-01-19" data-title="San Francisco">
-        <div class="picture-item__inner">
-  
-          <img src="https://images.unsplash.com/photo-1484851050019-ca9daf7736fb?ixlib=rb-0.3.5&auto=format&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=584&h=329&fit=crop&s=05325a7cc678f7f765cbbdcf7159ab89" srcset="https://images.unsplash.com/photo-1484851050019-ca9daf7736fb?ixlib=rb-0.3.5&auto=format&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=584&h=329&fit=crop&s=05325a7cc678f7f765cbbdcf7159ab89 1x, https://images.unsplash.com/photo-1484851050019-ca9daf7736fb?ixlib=rb-0.3.5&auto=format&q=55&fm=jpg&dpr=2&crop=entropy&cs=tinysrgb&w=584&h=329&fit=crop&s=05325a7cc678f7f765cbbdcf7159ab89 2x"
-            alt="Pier 14 at night, looking towards downtown San Francisco's brightly lit buildings" />
-          <div class="picture-item__details">
-            <figcaption class="picture-item__title"><a href="https://unsplash.com/photos/h3jarbNzlOg" target="_blank" rel="noopener">San Francisco</a></figcaption>
-            <p class="picture-item__tags hidden@xs"><i class="bi bi-star-fill"></i></p>
-          </div>
-        </div>
-      </figure>
-      <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["digital","featured"]' data-date-created="2015-10-20" data-title="Central Park">
-        <div class="picture-item__inner">
-          <div class="aspect aspect--16x9">
-            <div class="aspect__inner">
-              <img src="https://images.unsplash.com/photo-1445346366695-5bf62de05412?ixlib=rb-0.3.5&auto=format&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=284&h=160&fit=crop&s=1822bfd69c4021973a3d926e9294b70f" srcset="https://images.unsplash.com/photo-1445346366695-5bf62de05412?ixlib=rb-0.3.5&auto=format&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=284&h=160&fit=crop&s=1822bfd69c4021973a3d926e9294b70f 1x, https://images.unsplash.com/photo-1445346366695-5bf62de05412?ixlib=rb-0.3.5&auto=format&q=55&fm=jpg&dpr=2&crop=entropy&cs=tinysrgb&w=284&h=160&fit=crop&s=1822bfd69c4021973a3d926e9294b70f 2x"
-                alt="Looking down on central park and the surrounding builds from the Rockefellar Center" />
-            </div>
-          </div>
-          <div class="picture-item__details">
-            <figcaption class="picture-item__title"><a href="https://unsplash.com/photos/utwYoEu9SU8" target="_blank" rel="noopener">Central Park</a></figcaption>
-            <p class="picture-item__tags hidden@xs"><i class="bi bi-pencil"></i><i class="bi bi-star-fill"></i></p>
           </div>
         </div>
       </figure>
