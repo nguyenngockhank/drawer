@@ -58,6 +58,26 @@ body {
   font-family: 'Cera Round Pro Light', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 60s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 h1, h2, h3, h4, h5, h6, strong {
   font-family: 'Cera Round Pro Bold', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
@@ -311,7 +331,8 @@ p {
 .btn--primary {
   color: #3498db;
   border-color: #3498db;
-  background-color: rgba(52, 152, 219, 0);
+  /* background-color: rgba(52, 152, 219, 0); */
+  background-color: white;
 }
 
 @media (-moz-touch-enabled: 0), (pointer: fine) {
