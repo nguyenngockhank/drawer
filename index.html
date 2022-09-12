@@ -14,12 +14,16 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="./shuffle.js"></script>
     <script src="./main.js"></script>
 </head>
 <body>
+  <!-- <div class="stars"></div> -->
+  <div class="twinkling"></div> 
+ <div class="clouds"></div>
 
   <div class="container">
     <div class="row">
@@ -49,13 +53,14 @@
             <button class="btn btn--primary" data-group="featured"><i class="bi bi-star-fill" ></i> Featured</button>
           </div>
         </div>
-        <div class="filters-group">
+        <!-- <div class="filters-group">
           <label for="filters-search-input" class="filter-label">Search</label>
           <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input" />
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
+  
   
   <div class="container">
     <div id="grid" class="row my-shuffle-container">
@@ -75,6 +80,17 @@
         </div>
       </figure>
 
+      <figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--overlay" 
+            data-groups='["featured"]' data-date-created="2016-06-09" data-title="Crossroads">
+        <div class="picture-item__inner bg-s1 ">
+          <img src="./images/little-devil.gif" alt="A multi-level highway stack interchange in Puxi, Shanghai" />
+          <div class="picture-item__details backdrop-none">
+            <figcaption class="picture-item__title"><a href="#" target="_blank" rel="noopener">😋 Litle Devil</a></figcaption>
+            <p class="picture-item__tags hidden@xs"><i class="bi bi-star-fill"></i></p>
+          </div>
+        </div>
+      </figure>
+
 
       <figure class="col-6@xs col-8@sm col-6@md picture-item picture-item--overlay" 
           data-groups='["featured","digital"]' data-date-created="2016-06-29" data-title="Love note 2022">
@@ -89,16 +105,7 @@
         </div>
       </figure>
   
-      <!-- <figure class="col-6@xs col-8@sm col-6@md picture-item picture-item--overlay" 
-          data-groups='["digital"]' data-date-created="2016-06-29" data-title="Milky Way">
-        <div class="picture-item__inner bg-s2" >
-          <img src="./images/imposter.png" />
-          <div class="picture-item__details">
-            <figcaption class="picture-item__title"><a href="#" target="_blank" rel="noopener">Imposters</a></figcaption>
-            <p class="picture-item__tags hidden@xs"><i class="bi bi-star-fill"></i></p>
-          </div>
-        </div>
-      </figure> -->
+
 
       <figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--overlay" 
         data-groups='["digital", "featured"]' data-date-created="2016-06-09" data-title="Crossroads">
@@ -126,16 +133,6 @@
         </div>
       </figure>
 
-      <figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--overlay" 
-            data-groups='["featured"]' data-date-created="2016-06-09" data-title="Crossroads">
-        <div class="picture-item__inner bg-s1 ">
-          <img src="./images/little-devil.gif" alt="A multi-level highway stack interchange in Puxi, Shanghai" />
-          <div class="picture-item__details backdrop-none">
-            <figcaption class="picture-item__title"><a href="#" target="_blank" rel="noopener">😋 Litle Devil</a></figcaption>
-            <p class="picture-item__tags hidden@xs"><i class="bi bi-star-fill"></i></p>
-          </div>
-        </div>
-      </figure>
 
       <figure class="col-6@xs col-8@sm col-6@md picture-item picture-item--overlay" 
           data-groups='["featured","digital"]' data-title="Love note 2021">

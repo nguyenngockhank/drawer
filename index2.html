@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NhuTam's Portfolio</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/gridstack.min.css">
+    <link rel="stylesheet" href="./styles/gridstack-extra.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> -->
+    <script src="./scripts/gridstack-all.js"></script>
+    <style type="text/css">
+        .grid-stack { background: #FAFAD2; }
+        .grid-stack-item-content { background-color: #18BC9C; }
+        .grid-stack-item-content {
+            max-width: 100%;
+            /* max-height: 100%; */
+        }
+        /* .grid-stack-item[gs-w="4"]  { width: 100% }
+        .grid-stack-item[gs-w="3"]  { width: 75% }
+        .grid-stack-item[gs-w="2"]  { width: 50% }
+        .grid-stack-item[gs-w="1"]  { width: 25% }
+
+        .grid-stack-item[gs-x="3"]  { left: 75% }
+        .grid-stack-item[gs-x="2"]  { left: 50% }
+        .grid-stack-item[gs-x="1"]  { left: 25% }  */
+      </style>
+</head>
+<body>
+  <!-- <div class="stars"></div> -->
+  <div class="twinkling"></div> 
+ <div class="clouds"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12@sm">
+        <h1>NhuTam's Portfolio</h1>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+      <div class="row">
+          <div class="col-12@sm">
+            <div class="grid-stack"></div>
+          </div>
+      </div>
+  </div>
+
+
+
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-12@sm">
+        <h2>NhuTam's Contact</h2>
+        <p>To be updated!</p>
+      </div>
+      
+    </div>
+  </div> -->
+
+<script type="text/javascript">
+
+
+
+function buildItemHtmlContent(item) {
+    const { src, title } = item;
+    return `<div><img src="./images/${src}" alt="${title}" /><p>${title}</p></div>`
+}   
+
+function buildItemOptions(item) {
+    // 12 
+    return {
+        w: 1,
+        h:  1,
+        ...item,
+        // locked: true,
+        noResize: true,
+        noMove: true,
+        content: buildItemHtmlContent(item),
+    }
+}
+
+    var items = [
+        { src: 'sorry.png', title: '👿 Bull Demon King',  }, // will default to location (0,0) and 1x1
+        {  w:  2, src: 'lovenote2022-preview.jpg', title: '❤️️ Love note 2022'},
+        { src: 'spider2.png', title: 'Fly so high'},
+        { h: 2, src: 'spiderman.jpg', title: 'With great power comes great <strong>responsibility</strong>'},
+        {  src: 'little-devil.gif', title: '😋 Litle Devil'},
+        { w: 2, src: 'lovenote2021.jpg', title: '❤️️ Love note 2021' },
+        { w: 2, h: 2, src: 'couple.jpg', title: '🌙 Happy Moon Festival' },
+        { h: 2, src: 'con.jpg',  title: `I've got thoughts more tangled than my headphones.` },
+        {  src: 'gd-preview.jpg', title: 'G-Dragon' },
+       {  w: 2, src: 'lovenote2020.jpg',  title: '❤️️ Love note 2020'},
+    ];
+    var grid = GridStack.init({
+        column: 4,
+        cellHeight: 330,
+        // float: true,
+        alwaysShowResizeHandle: false,
+        // acceptWidgets: false,
+    });
+
+    grid.load(items.map(item => buildItemOptions(item)));
+
+let layout = 'moveScale';
+function resizeGrid() {
+    let width = document.body.clientWidth;
+    if (width < 700) {
+        grid.column(1, layout).cellHeight('100vw');
+    } else if (width < 850) {
+        grid.column(2, layout).cellHeight('33.3333vw');
+    } else if (width < 950) {
+        grid.column(3, layout).cellHeight('16.6666vw');
+    } else if (width < 1100) {
+        grid.column(4, layout).cellHeight('330');
+    } else {
+        grid.column(4, layout).cellHeight('330');
+    }
+};
+
+resizeGrid(); // finally size to actual window
+window.addEventListener('resize', function() {resizeGrid()});
+</script>
+</body>
+</html>
