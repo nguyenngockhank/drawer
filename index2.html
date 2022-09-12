@@ -42,12 +42,12 @@
         max-height: 100%;
       }
       .cover-wrapper img {
-        object-fit: contain;
+        /* object-fit: contain; */
       }
       .project-wrapper .project-title {
         position: absolute;
         padding: 3px;
-        bottom: 0;
+        top: 0;
         width: 100%;
         text-align: center;
         background-color: rgb(3 2 2 / 50%);
@@ -119,8 +119,8 @@ function buildItemOptions(item) {
         { src: 'sorry.png', title: '👿 Bull Demon King',  }, // will default to location (0,0) and 1x1
         {  w:  2, src: 'lovenote2022-preview.jpg', title: '❤️️ Love note 2022'},
         { src: 'spider2.png', title: 'Fly so high'},
-        { h: 2, src: 'spiderman.jpg', title: 'With great power comes great <strong>responsibility</strong>'},
         { w: 2, h: 3, src: 'couple.jpg', title: '🌙 Happy Moon Festival' },
+        { h: 2, src: 'spiderman.jpg', title: 'With great power comes great <strong>responsibility</strong>'},
         { h: 2, src: 'con.jpg',  title: `I've got thoughts more tangled than my headphones.` },
         { w: 2, src: 'lovenote2021.jpg', title: '❤️️ Love note 2021' },
         {  src: 'gd-preview.jpg', title: 'G-Dragon' },
@@ -143,7 +143,7 @@ function resizeGrid() {
     let box = document.querySelector('.project-wrapper');
     let newHeight = box && box.innerWidth || 270;
     let width = document.body.clientWidth;
-    console.log("device widht", width)
+    console.log("device widht", box)
     console.log("element width", box.clientWidth, newHeight)
     if (width < 700) {
         grid.column(1, layout).cellHeight("50vh");
